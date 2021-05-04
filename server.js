@@ -9,7 +9,7 @@ app.use(express.json())
 console.log("router server");
 require('dotenv').config()
 
-const port = normalizePort(process.env.PORT || 5000)
+const port = process.env.PORT || 5000
 
 app.use(cors())
 app.use('/', routes())
